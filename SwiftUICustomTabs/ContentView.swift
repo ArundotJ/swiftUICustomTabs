@@ -10,29 +10,40 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-//            CustomTabView(
-            
             TabView {
-                SampleView(title: "Welcome")
+                SampleView()
                     .tabItem {
                         Image(systemName: "house")
                         Text("Home")
+                            .bold()
+                    }
+                SampleView()
+                    .tabItem {
+                        Image(systemName: "gear")
+                        Text("Settings")
+                            .bold()
                     }
                 SegmentedView()
                     .tabItem {
-                        Image(systemName: "pencil.circle.fill")
-                        Text("Tabs")
+                        Image(systemName: "folder.fill.badge.gear")
+                        Text("Menu")
+                            .bold()
                     }
-                SampleView(title: "Settings")
-                    .tabItem {
-                        Image(systemName: "trash")
-                        Text("Trash")
-                    }
+                
             }
-            .navigationBarTitle("Hello")
-            .navigationBarColor(backgroundColor: #colorLiteral(red: 0, green: 0.5628422499, blue: 0.3188166618, alpha: 1), foregroundColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
+            .navigationBarTitle("Hello", displayMode: .inline)
+            .navigationBarColor(backgroundColor: #colorLiteral(red: 0.6642242074, green: 0.6642400622, blue: 0.6642315388, alpha: 1), foregroundColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
         }
         .navigationViewStyle(StackNavigationViewStyle())
+    }
+}
+
+struct SampleView: View {
+    var body: some View {
+        ZStack {
+            Color(#colorLiteral(red: 0.6642242074, green: 0.6642400622, blue: 0.6642315388, alpha: 1))
+            Text("Hello World")
+        }
     }
 }
 
@@ -40,15 +51,22 @@ struct SegmentedView: View {
     @State var selectedSegment: Int = 0
     var body: some View {
         ZStack {
-            CustomTabView(selectedItem: $selectedSegment) {
+            SegmentedTabView(selectedItem: $selectedSegment, tabs: [
+                TabItem(title: "Today", image: Image(systemName: "person.fill")),
+                TabItem(title: "Weekly", image: Image(systemName: "person.fill")),
+                TabItem(title: "Monthly", image: Image(systemName: "person.fill")),
+                TabItem(title: "Daily", image: Image(systemName: "person.fill")),
+            ]) {
                 TabView(selection: $selectedSegment,
                         content:  {
-                            SampleView(title: "Home")
+                            SampleView()
                                 .tag(0)
-                            SampleView(title: "Pensile")
+                            SampleView()
                                 .tag(1)
-                            SampleView(title: "Home")
+                            SampleView()
                                 .tag(2)
+                            SampleView()
+                                .tag(3)
                         })
                     .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             }
