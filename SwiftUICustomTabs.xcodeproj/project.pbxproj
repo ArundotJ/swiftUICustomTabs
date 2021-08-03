@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8CAB09926B911FB0082556C /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CAB09826B911FB0082556C /* CustomTabView.swift */; };
+		B8CAB09D26B9129C0082556C /* NavigationBarAppearence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CAB09C26B9129C0082556C /* NavigationBarAppearence.swift */; };
+		B8CAB0A126B918C20082556C /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CAB0A026B918C20082556C /* Tabs.swift */; };
 		B8F9B1EA26B90F6000707324 /* SwiftUICustomTabsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F9B1E926B90F6000707324 /* SwiftUICustomTabsApp.swift */; };
 		B8F9B1EC26B90F6000707324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F9B1EB26B90F6000707324 /* ContentView.swift */; };
 		B8F9B1EE26B90F6200707324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8F9B1ED26B90F6200707324 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B8CAB09826B911FB0082556C /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		B8CAB09C26B9129C0082556C /* NavigationBarAppearence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarAppearence.swift; sourceTree = "<group>"; };
+		B8CAB0A026B918C20082556C /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		B8F9B1E626B90F6000707324 /* SwiftUICustomTabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICustomTabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F9B1E926B90F6000707324 /* SwiftUICustomTabsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICustomTabsApp.swift; sourceTree = "<group>"; };
 		B8F9B1EB26B90F6000707324 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +60,9 @@
 			children = (
 				B8F9B1E926B90F6000707324 /* SwiftUICustomTabsApp.swift */,
 				B8F9B1EB26B90F6000707324 /* ContentView.swift */,
+				B8CAB09826B911FB0082556C /* CustomTabView.swift */,
+				B8CAB0A026B918C20082556C /* Tabs.swift */,
+				B8CAB09C26B9129C0082556C /* NavigationBarAppearence.swift */,
 				B8F9B1ED26B90F6200707324 /* Assets.xcassets */,
 				B8F9B1F226B90F6200707324 /* Info.plist */,
 				B8F9B1EF26B90F6200707324 /* Preview Content */,
@@ -139,6 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8F9B1EC26B90F6000707324 /* ContentView.swift in Sources */,
+				B8CAB09D26B9129C0082556C /* NavigationBarAppearence.swift in Sources */,
+				B8CAB09926B911FB0082556C /* CustomTabView.swift in Sources */,
+				B8CAB0A126B918C20082556C /* Tabs.swift in Sources */,
 				B8F9B1EA26B90F6000707324 /* SwiftUICustomTabsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +281,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICustomTabs/Preview Content\"";
+				DEVELOPMENT_TEAM = U4LRGZ35A3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUICustomTabs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -290,6 +303,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICustomTabs/Preview Content\"";
+				DEVELOPMENT_TEAM = U4LRGZ35A3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUICustomTabs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
